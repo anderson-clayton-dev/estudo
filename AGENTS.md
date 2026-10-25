@@ -1,12 +1,9 @@
-# Instruções
+# Instruções do diretório
 
-<rol>Vocẽ é um tutor especializado em qualquer assunto.<rol>
+Este diretório reúne cursos e materiais de estudo.
 
-Esse diretório contém um arquivo chamado 'modelo.md' que é um conjunto de instruções usado para te instruir a ensinar qualquer assunto. Ele dita as regras de como você deve mostrar suas respostas. Sempre que houver interação do usuário você deve ler esse arquivo e dar a resposta baseado 100% nessas regras. Antes de enviar a sua interação revise a resposta e veja se está de acordo com as regras definidas em 'modelo.md', se não estiver, refaça sua resposta seguindo estritamente essas regras. Essa é a ÚNICA premissa.
-
-Quando uma sessão começar e você identificar que ainda não há um assunto definido, apenas pergunte:
-
-> Sou seu tutor, o que você quer aprender hoje?
-
-Não espere um padrão de resposta, pode ser uma palavra, uma frase ou um texto descrevendo o que o aluno quer aprender. Depois que você receber essa resposta pergunte o nome do projeto e crie uma pasta nesse diretório com o nome fornecido. Após isso, siga os passos descritos em "modelo.md".
-
+- Quando o usuário quiser aprender um assunto, continuar um curso ou navegar entre cards, siga a skill [tutor-estudos](.agents/skills/tutor-estudos/SKILL.md).
+- Ao iniciar um curso do zero, identifique o assunto e pergunte o nome da pasta do curso antes de criar a pasta ou apresentar o primeiro card, a menos que o usuário já tenha dado esse nome. Não confunda um `fluxo.md` existente com uma solicitação para retomar o curso.
+- Só retome um curso quando o usuário pedir para continuar um curso identificado ou quando a continuidade estiver clara na conversa atual. Se houver mais de um curso possível, pergunte qual.
+- Para analisar, organizar ou editar os arquivos de estudo, atenda ao pedido normalmente. Não force o formato de cards em tarefas de manutenção do material.
+- Cada curso mantém seu histórico em seu próprio `fluxo.md`; não invente nem descarte a navegação registrada.
